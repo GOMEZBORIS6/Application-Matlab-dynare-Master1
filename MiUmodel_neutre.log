@@ -1,0 +1,114 @@
+Starting Dynare (version 5.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Found 12 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+
+
+
+Residuals of the static equations:
+
+Equation number 1 : 0 : Euler Equation on Consumption
+Equation number 2 : 0 : Money Demand Equation
+Equation number 3 : 0 : Bonds Demand Equation
+Equation number 4 : 0 : Capital Demand Equation
+Equation number 5 : 0 : Labor Supply Equation
+Equation number 6 : 0 : Law of Motion of Capital
+Equation number 7 : 0 : Capital Demand Equation
+Equation number 8 : 0 : Labor Demand Equation
+Equation number 9 : 0 : Production Function
+Equation number 10 : 0 : Resource Constraint
+Equation number 11 : 0 : Monetary Policy Rule
+Equation number 12 : 0 : Money growth Shock
+
+
+
+STEADY-STATE RESULTS:
+
+lambda 		 0
+m      		 0
+c      		 0
+R      		 0
+k      		 0
+h      		 0
+rk     		 0
+y      		 0
+u      		 0
+pie    		 0
+i      		 0
+w      		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       5.093e-17        5.093e-17                0
+             0.8              0.8                0
+           0.959            0.959                0
+            1.02             1.02                0
+           1.032            1.032                0
+       3.576e+17        3.576e+17                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         12
+  Number of stochastic shocks: 1
+  Number of state variables:   3
+  Number of jumpers:           3
+  Number of static variables:  6
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables      eps_mu
+eps_mu       1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   y               c               R               m               u             pie
+m(-1)                              0               0               0               0               0        1.000000
+k(-1)                       0.141533        0.663692       -0.004493        0.554230               0       -0.554230
+u(-1)                              0               0        0.058716       -2.906422        0.800000        3.706422
+eps_mu                             0               0        0.073394       -3.633028        1.000000        4.633028
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+y                 0.000000        0.000000        0.000000             NaN             NaN
+c                 0.000000        0.000000        0.000000             NaN             NaN
+R                -0.040006        0.106397        0.011320       -0.184068       -0.036490
+m                 1.980281        5.266650       27.737603        0.184068       -0.036490
+u                -0.545077        1.449659        2.101510       -0.184068       -0.036490
+pie              -0.465509        4.482617       20.093854        0.061498        0.353747
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE          y        c        R        m        u      pie
+y               NaN      NaN      NaN      NaN      NaN      NaN
+c               NaN      NaN      NaN      NaN      NaN      NaN
+R               NaN      NaN   1.0000  -1.0000   1.0000   0.6156
+m               NaN      NaN  -1.0000   1.0000  -1.0000  -0.6156
+u               NaN      NaN   1.0000  -1.0000   1.0000   0.6156
+pie             NaN      NaN   0.6156  -0.6156   0.6156   1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE          1        2        3        4        5
+y               NaN      NaN      NaN      NaN      NaN
+c               NaN      NaN      NaN      NaN      NaN
+R            0.7390   0.5116   0.3492   0.2908   0.2413
+m            0.7390   0.5116   0.3492   0.2908   0.2413
+u            0.7390   0.5116   0.3492   0.2908   0.2413
+pie          0.0286  -0.0596  -0.1384   0.0139  -0.0369
+Total computing time : 0h00m03s
